@@ -43,10 +43,6 @@ There is no single place to show how to connect to the world's data stores for J
 
 These examples were create with Eclipse + Maven. The Eclipse Project files were enormous and therefore omitted for brevity.
 
-#API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
 #Tests
 
 Unfortunately, JUNIT has not been used thus far. We welcome that addition.
