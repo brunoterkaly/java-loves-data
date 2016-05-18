@@ -1,4 +1,4 @@
-// Copyright 2016, Bruno Terkaly, All Rights Reserved
+// MIT License Copyright (c) 2016 Bruno Terkaly
 // Open sourcing my code for my O'Reilly course.
 // Cloud-Based Provisioning, Storage, and Data Retrieval with Java and Linux
 // Learn more here http://bit.ly/bruno-does-linux-data-java
