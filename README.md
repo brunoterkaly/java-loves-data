@@ -12,6 +12,11 @@ Both SQL and NoSQL stores are supported.
 
 This is the code for MySQL. There are 8 or 9 other data stores supported.
 
+This is just a very small code sample. It does include a number of other statements that you don't see here, such as inserting, and selecting data.
+
+The basic premise is that all code samples need to illustrate as much data-related operations as possible, such as adding or dropping tables, documents, as well as looping through collections of data that have been selected.
+
+
     // Invoke JDBC driver
     Class.forName("com.mysql.jdbc.Driver").newInstance();
     // Setup the connection with the DB
@@ -37,11 +42,15 @@ Many examples use the JDBC. But data stores like Cassandra, and MongoDB do not. 
 
 #Motivation
 
-There is no single place to show how to connect to the world's data stores for Java. It would be fantastic to make this supported data stores as large as possible. Think http://www.connectionstrings.com as a good example of the goals.
+Today, the ability to interact with data from the Java programming language is widely dispersed and scattered among many different sources. The goal for this repository is to provide a single source of truth for accessing as many data stores as possible from Java.
+
+Think http://www.connectionstrings.com as a good example of the goals.
 
 #Installation
 
 These examples were create with Eclipse + Maven. The Eclipse Project files were enormous and therefore omitted for brevity.
+
+If the community believes that we need to include the entire eclipse project file, I am open to providing that. However, I am trying to avoid the obfuscation of the core elements because Eclipse project files are rather large.
 
 #Tests
 
