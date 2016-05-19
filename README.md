@@ -17,25 +17,27 @@ This is just a very small code sample. It does include a number of other stateme
 The basic premise is that all code samples need to illustrate as much data-related operations as possible, such as adding or dropping tables, documents, as well as looping through collections of data that have been selected.
 
 
-    // Invoke JDBC driver
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
-    // Setup the connection with the DB
-    connect = DriverManager.getConnection(
-        "jdbc:mysql://[your ip address of your VM:3306/azurecourse?" +
-        "user=mysqluser&password=[your password]&useUnicode=true&characterEncoding=UTF-8");
+
+```java
+// Invoke JDBC driver
+Class.forName("com.mysql.jdbc.Driver").newInstance();
+// Setup the connection with the DB
+connect = DriverManager.getConnection(
+    "jdbc:mysql://[your ip address of your VM:3306/azurecourse?" +
+    "user=mysqluser&password=[your password]&useUnicode=true&characterEncoding=UTF-8");
 
 
-    // The mysql insert statement
-    String query = "insert into courses(id, coursenumber, coursetitle) " +
-        "values(?, ?, ?)";
-    // Create the mysql insert preparedstatement
-    PreparedStatement preparedStmt = connect.prepareStatement(query);
-    preparedStmt.setInt(1, 5);
-    preparedStmt.setString(2, "0401");
-    preparedStmt.setString(3, "Intro to Data");
-    // Execute the preparedstatement
-    preparedStmt.executeUpdate();
-            
+// The mysql insert statement
+String query = "insert into courses(id, coursenumber, coursetitle) " +
+    "values(?, ?, ?)";
+// Create the mysql insert preparedstatement
+PreparedStatement preparedStmt = connect.prepareStatement(query);
+preparedStmt.setInt(1, 5);
+preparedStmt.setString(2, "0401");
+preparedStmt.setString(3, "Intro to Data");
+// Execute the preparedstatement
+preparedStmt.executeUpdate();
+```
 
 Many examples use the JDBC. But data stores like Cassandra, and MongoDB do not. In those cases, the simplest possible code is presented.
 
